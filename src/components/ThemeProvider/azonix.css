@@ -1,0 +1,10 @@
+ @font-face {
+   font-family: "Azonix";
+   font-style: "normal";
+   font-weight: 400;
+   font-display: "swap";
+   src: local("Azonix"),
+     local("Azonix-Regular"),
+     url("assets/fonts/azonix.woff2") format("woff2"),
+     url("assets/fonts/azonix.woff") format("woff");
+ }
