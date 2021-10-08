@@ -1,10 +1,14 @@
-import HomeSection from "./Home";
+import Contact from "./Contact";
+import Footer from "./Footer";
+import Landing from "./Landing";
 import NavBar from "./NavBar";
 
 const Home = () => (
   <div>
     <NavBar />
-    <HomeSection />
+    <Landing />
+    <Contact />
+    <Footer />
   </div>
 );
 

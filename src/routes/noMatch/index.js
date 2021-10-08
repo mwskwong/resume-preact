@@ -1,6 +1,6 @@
 import { Button, Container, Typography } from "@mui/material";
 
-import useSx from "./useSx";
+import useSx from "./useNoMatchSx";
 
 const NoMatch = () => {
   const sx = useSx();

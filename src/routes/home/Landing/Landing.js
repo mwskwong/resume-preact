@@ -6,7 +6,7 @@ import SocialMedia from "components/SocialMedia";
 import Title from "./Title";
 import useSx from "./useHomeSx";
 
-const Home = () => {
+const Landing = () => {
   const sx = useSx();
 
   return (
@@ -19,6 +19,6 @@ const Home = () => {
   );
 };
 
-Home.whyDidYouRender = true;
+Landing.whyDidYouRender = true;
 
-export default Home;
+export default Landing;

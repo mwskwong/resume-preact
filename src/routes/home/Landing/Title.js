@@ -2,16 +2,16 @@ import { Box, Typography } from "@mui/material";
 import { useEffect, useRef } from "react";
 
 import Typewriter from "typewriter-effect/dist/core";
+import { getOccupations } from "api";
+import { useState } from "preact/hooks";
 import useSx from "./useTitleSx";
-
-const occupations = [
-  "System DBA",
-  "Front-End Developer"
-];
 
 const Title = () => {
   const sx = useSx();
+  const [occupations, setOccupations] = useState([]);
   const typewriterRef = useRef();
+
+  useEffect(() => getOccupations().then(occupations => setOccupations(occupations)), []);
 
   useEffect(() => {
     new Typewriter(typewriterRef.current, {
@@ -22,7 +22,7 @@ const Title = () => {
       loop: true,
       autoStart: true
     });
-  }, []);
+  }, [occupations]);
 
   return (
     <Box sx={sx.root}>

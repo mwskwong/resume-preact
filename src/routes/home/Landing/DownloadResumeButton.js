@@ -5,7 +5,7 @@ const DownloadResumeButton = ({ sx }) => {
   return (
     <Button
       sx={sx}
-      variant="outlined"
+      variant="contained"
       size="large"
       target="_blank"
       rel="noopener noreferrer"
