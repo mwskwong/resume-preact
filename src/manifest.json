@@ -1,11 +1,11 @@
 {
-  "name": "resume",
-  "short_name": "resume",
+  "name": "Matthew Kwong - System DBA & Front-End Developer",
+  "short_name": "Matthew Kwong",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#673ab8",
+  "theme_color": "#fff",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",
