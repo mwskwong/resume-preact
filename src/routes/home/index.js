@@ -1,6 +1,6 @@
-import Contact from "./Contact";
-import Footer from "./Footer";
-import Landing from "./Landing";
+import Contact from "async!./Contact";
+import Footer from "async!./Footer";
+import Landing from "async!./Landing";
 import NavBar from "./NavBar";
 
 const Home = () => (

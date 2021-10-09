@@ -1,5 +1,5 @@
 import emailjs from "emailjs-com";
 
-emailjs.init("user_cvUPh6E40cCRJwdO8UklC");
+emailjs.init(process.env.PREACT_APP_EMAILJS_USER_ID);
 
 export default emailjs;

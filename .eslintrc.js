@@ -1,53 +1,53 @@
 module.exports = {
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "node": true,
-    "commonjs": true
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+    commonjs: true
   },
-  "extends": [
+  extends: [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended"
   ],
-  "settings": {
-    "react": {
-      "version": "detect"
+  settings: {
+    react: {
+      version: "detect"
     }
   },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
     },
-    "ecmaVersion": 12,
-    "sourceType": "module"
+    ecmaVersion: 12,
+    sourceType: "module"
   },
-  "plugins": [
+  plugins: [
     "react"
   ],
-  "rules": {
+  rules: {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "comma-dangle": [
       "error",
       "never"
     ],
-    "indent": [
+    indent: [
       "error",
       2,
       {
-        "SwitchCase": 1
+        SwitchCase: 1
       }
     ],
     "linebreak-style": [
       "error",
       "unix"
     ],
-    "quotes": [
+    quotes: [
       "error",
       "double"
     ],
-    "semi": [
+    semi: [
       "error",
       "always"
     ]
