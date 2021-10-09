@@ -12,7 +12,7 @@ const PersonalInfo = () => {
   const sx = useSx();
   const [contact, setContact] = useState({});
 
-  useEffect(() => getContact().then(contact => setContact(contact)));
+  useEffect(() => getContact().then(contact => setContact(contact)), []);
 
   return (
     <Stack spacing={3} sx={sx.root}>
