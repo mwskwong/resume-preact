@@ -4,7 +4,7 @@ import DownloadResumeButton from "./DownloadResumeButton";
 import { HOME } from "constants/nav";
 import SocialMedia from "components/SocialMedia";
 import Title from "./Title";
-import useSx from "./useHomeSx";
+import useSx from "./useLandingSx";
 
 const Landing = () => {
   const sx = useSx();

@@ -26,10 +26,10 @@ const Title = () => {
 
   return (
     <Box sx={sx.root}>
-      <Typography sx={sx.greetings} variant="h5" gutterBottom>
+      <Typography sx={sx.greetings} variant="h4" gutterBottom>
         Greetings
       </Typography>
-      <Typography sx={sx.title} variant="h2">
+      <Typography sx={sx.title} variant="h1">
         {"I Am "}
         <Box component="span" ref={typewriterRef} sx={sx.importantText} />
       </Typography>

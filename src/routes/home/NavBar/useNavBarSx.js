@@ -15,9 +15,6 @@ const useSx = () => useMemo(() => ({
       xs: "inline-flex",
       md: "none"
     }
-  },
-  navList: {
-    px: 1
   }
 }), []);
 

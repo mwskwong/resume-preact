@@ -6,7 +6,7 @@ const useSx = ({ active }) => useMemo(() => ({
   },
   textPrimary: {
     fontWeight: active && "bold",
-    color: "text.primary",
+    color: active ? "primary.main" : "text.primary",
     textTransform: "capitalize"
   }
 }), [active]);

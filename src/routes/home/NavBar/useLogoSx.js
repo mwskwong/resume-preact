@@ -1,13 +1,7 @@
 import { useMemo } from "preact/hooks";
 
 const useSx = ({ sxProp }) => useMemo(() => ({
-  root: {
-    transition: theme => theme.transitions.create(
-      ["background-color", "color"],
-      { duration: theme.transitions.duration.short }
-    ),
-    ...sxProp
-  },
+  root: sxProp,
   text: {
     fontFamily: "\"Azonix\", sans-serif"
   }

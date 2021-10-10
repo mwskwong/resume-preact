@@ -11,8 +11,8 @@ const getDesignTokens = mode => ({
       black: nord0
     },
     primary: {
-      main: mode === "light" ? nord3 : nord6,
-      contrastText: mode === "light" ? nord6 : nord3
+      main: nord8,
+      contrastText: nord3
     },
     secondary: {
       main: mode === "light" ? lighten(nord3, .2) : darken(nord6, .2),
@@ -56,10 +56,6 @@ const getDesignTokens = mode => ({
       default: mode === "light" ? "#fff" : nord0,
       sectionPrimary: mode === "light" ? lighten(nord6, .045) : nord1,
       sectionSecondary: mode === "light" ? lighten(nord5, .06) : darken(nord0, .025)
-    },
-    action: {
-      active: alpha(mode === "light" ? nord6 : nord3, .54),
-      hover: alpha(mode === "light" ? nord6 : nord3, .4)
     }
   },
   shape: {

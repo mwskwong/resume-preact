@@ -14,6 +14,14 @@ const getThemedComponents = theme => ({
     MuiButton: {
       defaultProps: {
         disableElevation: true
+      },
+      styleOverrides: {
+        sizeLarge: {
+          padding: "1rem 1.25rem",
+          ...theme.typography.body1,
+          lineHeight: 21 / 16,
+          fontWeight: 700
+        }
       }
     },
     MuiCssBaseline: {
@@ -40,17 +48,11 @@ const getThemedComponents = theme => ({
           paddingBottom: theme.spacing(10)
         },
         ".Typewriter__cursor": {
-          // fontWeight: theme.typography.h2.fontWeight
+          fontWeight: theme.typography.h1.fontWeight,
+          color: theme.palette.text.primary
         }
       }
     },
-    // MuiFab: {
-    //   styleOverrides: {
-    //     root: {
-    //       borderRadius: 8
-    //     }
-    //   }
-    // },
     MuiIconButton: {
       defaultProps: {
         color: "secondary"
@@ -63,11 +65,6 @@ const getThemedComponents = theme => ({
         }
       }
     },
-    // MuiSvgIcon: {
-    //   defaultProps: {
-    //     htmlColor: mode === "dark" ? "#fff" : undefined
-    //   }
-    // },
     MuiTimeline: {
       styleOverrides: {
         root: {

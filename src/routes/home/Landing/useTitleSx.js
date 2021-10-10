@@ -15,14 +15,14 @@ const useSx = () => useMemo(() => ({
     textAlign: "center",
     color: "text.primary",
     "@media (max-width: 520px)": {
-      height: theme => `${theme.typography.h2.lineHeight * 2}em`
+      height: theme => `${theme.typography.h1.lineHeight * 2}em`
     },
     "@media (max-width: 300px)": {
-      height: theme => `${theme.typography.h2.lineHeight * 3}em`
+      height: theme => `${theme.typography.h1.lineHeight * 3}em`
     }
   },
   importantText: {
-    fontWeight: 400
+    color: "primary.main"
   }
 }), []);
 

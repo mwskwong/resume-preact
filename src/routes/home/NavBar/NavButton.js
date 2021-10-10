@@ -7,7 +7,7 @@ const NavButton = ({ label, id, active }) => {
   const sx = useSx({ active });
 
   return (
-    <Button size="large" sx={sx.root} component="a" href={`#${id}`}>
+    <Button color="inherit" sx={sx.root} component="a" href={`#${id}`}>
       {label}
       {
         active
