@@ -1,12 +1,20 @@
+import { useEffect, useState } from "preact/hooks";
+
 import { Button } from "@mui/material";
 import PropTypes from "prop-types";
+import { getResumeURL } from "api";
 
 const DownloadResumeButton = ({ sx }) => {
+  const [resumeURL, setResumeURL] = useState();
+
+  useEffect(() => getResumeURL().then(url => setResumeURL(url)), []);
+
   return (
     <Button
       sx={sx}
       variant="contained"
       size="large"
+      href={resumeURL}
       target="_blank"
       rel="noopener noreferrer"
     >

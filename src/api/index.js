@@ -11,6 +11,11 @@ export const getSocialMedia = async () => {
   return entries.items.map(entry => entry.fields);
 };
 
+export const getResumeURL = async () => {
+  const asset = await contentful.getAsset("4bn3ILWZxwv2FfY3M1lAEn");
+  return asset.fields.file.url;
+};
+
 export const getContact = async () => {
   const entries = await contentful.getEntries({ content_type: "contact", order: "-sys.updatedAt" });
   return entries.items?.[0]?.fields;
