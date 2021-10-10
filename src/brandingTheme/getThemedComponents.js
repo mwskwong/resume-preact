@@ -50,11 +50,6 @@ const getThemedComponents = theme => ({
         }
       }
     },
-    MuiIconButton: {
-      defaultProps: {
-        color: "secondary"
-      }
-    },
     MuiInputLabel: {
       styleOverrides: {
         root: {

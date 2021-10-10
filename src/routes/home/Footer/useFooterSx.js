@@ -1,19 +1,17 @@
-import { useMemo } from "react";
-import { useTheme } from "@mui/material";
+import { useMemo } from "preact/hooks";
 
-const useSx = () => {
-  const theme = useTheme();
-
-  return useMemo(() => ({
-    gridContainer: {
-      alignItems: "center",
-      justifyContent: "space-between",
-      py: 3,
-      [theme.breakpoints.between("sm", "xl")]: {
-        px: 5
-      }
+const useSx = () => useMemo(() => ({
+  root: {
+    color: "text.secondary"
+  },
+  gridContainer: {
+    alignItems: "center",
+    justifyContent: "space-between",
+    py: 3,
+    px: {
+      sm: 5
     }
-  }), [theme.breakpoints]);
-};
+  }
+}), []);
 
 export default useSx;

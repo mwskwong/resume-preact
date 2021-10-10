@@ -7,13 +7,13 @@ const useSx = () => useMemo(() => ({
     alignItems: "center"
   },
   title: {
-    fontWeight: 500,
-    color: "text.primary",
+    color: "primary.main",
     textAlign: "center",
+    textTransform: "capitalize",
     mt: 2
   },
   value: {
-    color: "text.secondary",
+    color: "text.primary",
     textAlign: "center"
   }
 }), []);

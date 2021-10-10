@@ -1,6 +1,7 @@
 import { Container, Divider, Grid } from "@mui/material";
 
 import CopyrightStatement from "./CopyrightStatement";
+import { Fragment } from "preact";
 import SocialMedia from "components/SocialMedia";
 import useSx from "./useFooterSx";
 
@@ -8,9 +9,9 @@ const Footer = () => {
   const sx = useSx();
 
   return (
-    <div>
+    <Fragment>
       <Divider />
-      <Container component="footer">
+      <Container component="footer" sx={sx.root}>
         <Grid sx={sx.gridContainer} container>
           <Grid item sm="auto" xs={12}>
             <CopyrightStatement />
@@ -20,7 +21,7 @@ const Footer = () => {
           </Grid>
         </Grid>
       </Container>
-    </div>
+    </Fragment>
   );
 };
 

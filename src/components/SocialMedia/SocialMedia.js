@@ -34,8 +34,9 @@ const SocialMedia = ({ sx: sxProp }) => {
         return (
           <IconButton
             key={name}
-            href={link}
+            color="inherit"
             aria-label={name}
+            href={link}
             target="_blank"
             rel="noopener noreferrer"
             edge={index === 0 ? "start" : index === socialMedia.length - 1 ? "end" : false}

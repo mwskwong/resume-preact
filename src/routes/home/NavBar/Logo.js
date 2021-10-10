@@ -8,7 +8,7 @@ const Logo = ({ sx: sxProp, onClick }) => {
   const sx = useSx({ sxProp });
 
   return (
-    <Button color="primary" sx={sx.root} component="a" href={`#${HOME.id}`} onClick={onClick}>
+    <Button color="inherit" sx={sx.root} component="a" href={`#${HOME.id}`} onClick={onClick}>
       <Typography sx={sx.text} variant="h5">
         Matthew
       </Typography>

@@ -11,22 +11,24 @@ const Contact = () => {
   const sx = useSx();
 
   return (
-    <Container component="section" id={CONTACT.id}>
-      <SectionHeader
-        heading="Get In Touch"
-        Icon={HexSlice6}
-      />
-      <Box sx={sx.gridContainer}>
-        <Grid container spacing={2}>
-          <Grid item md={4} xs={12}>
-            <PersonalInfo />
+    <Box sx={sx.root} component="section" id={CONTACT.id}>
+      <Container>
+        <SectionHeader
+          heading="Get In Touch"
+          Icon={HexSlice6}
+        />
+        <Box sx={sx.gridContainer}>
+          <Grid container spacing={2}>
+            <Grid item md={4} xs={12}>
+              <PersonalInfo />
+            </Grid>
+            <Grid item md xs={12}>
+              <ContactForm />
+            </Grid>
           </Grid>
-          <Grid item md xs={12}>
-            <ContactForm />
-          </Grid>
-        </Grid>
-      </Box>
-    </Container>
+        </Box>
+      </Container>
+    </Box>
   );
 };
 

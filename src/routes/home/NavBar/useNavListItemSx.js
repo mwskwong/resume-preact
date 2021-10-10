@@ -5,9 +5,8 @@ const useSx = ({ active }) => useMemo(() => ({
     borderRadius: 1
   },
   textPrimary: {
-    fontWeight: active && "bold",
-    color: active && "primary.main",
-    textTransform: "capitalize"
+    typography: "button",
+    color: active && "primary.main"
   }
 }), [active]);
 

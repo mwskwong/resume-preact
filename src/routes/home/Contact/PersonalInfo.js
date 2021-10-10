@@ -8,6 +8,24 @@ import PersonalInfoItem from "./PersonalInfoItem";
 import { getContact } from "api";
 import useSx from "./usePersonalInfoSx";
 
+const contactTemplate = {
+  phone: {
+    Icon: Mobile,
+    title: "Call Me On",
+    skeletonWidth: 121
+  },
+  email: {
+    Icon: Email,
+    title: "Email Me At",
+    skeletonWidth: 215
+  },
+  address: {
+    Icon: Location,
+    title: "Find Me At",
+    skeletonWidth: 179
+  }
+};
+
 const PersonalInfo = () => {
   const sx = useSx();
   const [contact, setContact] = useState({});
@@ -16,21 +34,14 @@ const PersonalInfo = () => {
 
   return (
     <Stack spacing={3} sx={sx.root}>
-      <PersonalInfoItem
-        Icon={Mobile}
-        title="Call Me On"
-        value={contact.phone || <Skeleton width={121} />}
-      />
-      <PersonalInfoItem
-        Icon={Email}
-        title="Email Me At"
-        value={contact.email || <Skeleton width={215} />}
-      />
-      <PersonalInfoItem
-        Icon={Location}
-        title="FInd Me At"
-        value={contact.address || <Skeleton width={179} />}
-      />
+      {Object.entries(contactTemplate).map(([key, { Icon, title, skeletonWidth }]) => (
+        <PersonalInfoItem
+          key={key}
+          Icon={Icon}
+          title={title}
+          value={contact[key] || <Skeleton width={skeletonWidth} />}
+        />
+      ))}
     </Stack>
   );
 };

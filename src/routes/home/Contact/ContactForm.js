@@ -51,7 +51,7 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmitMessage = event => {
+  const handleSubmit = event => {
     event.preventDefault();
 
     const emailErrorMessage = validateEmail(messageData.email);
@@ -77,12 +77,13 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmitMessage} noValidate>
+    <form onSubmit={handleSubmit} noValidate>
       <Grid container spacing={4}>
         <Grid item sm={6} xs={12}>
           <TextField
             id="name"
             name="name"
+            color="secondary"
             fullWidth
             label="Name"
             autoComplete="name"
@@ -94,6 +95,7 @@ const ContactForm = () => {
             ref={emailInputRef}
             id="email"
             name="from"
+            color="secondary"
             fullWidth
             required
             label="Email"
@@ -107,6 +109,7 @@ const ContactForm = () => {
           <TextField
             id="subject"
             name="subject"
+            color="secondary"
             fullWidth
             label="Subject"
             onChange={handleChange}
@@ -116,6 +119,7 @@ const ContactForm = () => {
           <TextField
             id="message"
             name="body"
+            color="secondary"
             fullWidth
             label="Message"
             onChange={handleChange}
@@ -131,7 +135,7 @@ const ContactForm = () => {
           ? "success"
           : emailSendSuccess === false
             ? "error"
-            : "primary"
+            : "secondary"
         }
         endIcon={emailSendSuccess
           ? <Success />

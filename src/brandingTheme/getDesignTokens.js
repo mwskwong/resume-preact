@@ -1,5 +1,5 @@
 import { alpha, darken, lighten } from "@mui/system";
-import { nord0, nord1, nord11, nord13, nord14, nord4, nord5, nord6, nord8 } from "./nord";
+import { nord0, nord1, nord11, nord13, nord14, nord3, nord4, nord5, nord6, nord8 } from "./nord";
 
 import defaultTheme from "./defaultTheme";
 import systemFonts from "./systemFonts";
@@ -11,28 +11,28 @@ const getDesignTokens = mode => ({
       black: nord0
     },
     primary: {
-      main: mode === "light" ? "#007FFF" : "#5090D3",
+      main: nord8,
       contrastText: nord6
     },
     secondary: {
-      main: mode === "light" ? lighten(nord0, .2) : darken(nord6, .2),
-      contrastText: mode === "light" ? nord6 : nord0
+      main: nord0,
+      contrastText: nord8
     },
     error: {
       main: nord11,
-      contrastText: nord0
+      contrastText: nord3
     },
     warning: {
       main: nord13,
-      contrastText: nord0
+      contrastText: nord3
     },
     info: {
       main: nord8,
-      contrastText: nord0
+      contrastText: nord3
     },
     success: {
       main: nord14,
-      contrastText: nord0
+      contrastText: nord3
     },
     grey: {
       50: "#F3F6F9",
@@ -47,19 +47,28 @@ const getDesignTokens = mode => ({
       900: "#20262D"
     },
     text: {
-      primary: mode === "light" ? nord0 : nord6,
-      secondary: mode === "light" ? lighten(nord0, .2) : darken(nord6, .2),
-      disabled: mode === "light" ? lighten(nord0, .4) : darken(nord6, .4)
+      primary: mode === "light" ? nord3 : nord6,
+      secondary: mode === "light" ? lighten(nord3, .2) : darken(nord6, .2),
+      disabled: mode === "light" ? lighten(nord3, .4) : darken(nord6, .4)
     },
     divider: alpha(nord4, .5),
     background: {
       default: mode === "light" ? "#fff" : nord0,
-      sectionPrimary: mode === "light" ? lighten(nord6, .045) : nord1,
-      sectionSecondary: mode === "light" ? lighten(nord5, .06) : darken(nord0, .025)
+      sectionPrimary: mode === "light" ? lighten(nord6, .8) : nord1,
+      sectionSecondary: mode === "light" ? lighten(nord5, .7) : darken(nord0, .25)
+    },
+    action: {
+      active: mode === "light" ? nord3 : nord6,
+      hover: alpha(mode === "light" ? nord3 : nord6, .04),
+      selected: alpha(mode === "light" ? nord3 : nord6, .08),
+      disabled: alpha(mode === "light" ? nord3 : nord6, .26),
+      disabledBackground: alpha(mode === "light" ? nord3 : nord6, .12),
+      focus: alpha(mode === "light" ? nord3 : nord6, .12)
     }
   },
+  spacing: 10,
   shape: {
-    borderRadius: 8
+    borderRadius: 10
   },
   typography: {
     fontFamily: systemFonts.join(","),

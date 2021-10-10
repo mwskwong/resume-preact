@@ -13,6 +13,7 @@ const DownloadResumeButton = ({ sx }) => {
     <Button
       sx={sx}
       variant="contained"
+      color="secondary"
       size="large"
       href={resumeURL}
       target="_blank"
