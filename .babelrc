@@ -1,7 +1,4 @@
 {
-  "plugins": [
-    "babel-plugin-styled-components"
-  ],
   "env": {
     "test": {
       "presets": [
