@@ -1,19 +1,22 @@
 import * as nav from "constants/nav";
 
-import { AppBar, Box, Collapse, IconButton, List, Stack, Toolbar } from "@mui/material";
+import { AppBar, Box, Collapse, IconButton, List, Stack, Toolbar, useMediaQuery } from "@mui/material";
+import { useEffect, useState } from "preact/hooks";
 
 import Logo from "./Logo";
 import { MenuOutlined } from "@mui/icons-material";
 import NavButton from "./NavButton";
 import NavListItem from "./NavListItem";
 import useActiveSectionId from "hooks/useActiveSectionId";
-import { useState } from "preact/hooks";
 import useSx from "./useNavBarSx";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const mdUp = useMediaQuery(theme => theme.breakpoints.up("md"), { noSsr: true });
   const activeSectionId = useActiveSectionId();
   const sx = useSx();
+
+  useEffect(() => mdUp && setMenuOpen(false), [mdUp]);
 
   const handleMenuToggle = () => setMenuOpen(menuOpen => !menuOpen);
 

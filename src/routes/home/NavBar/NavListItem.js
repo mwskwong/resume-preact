@@ -8,7 +8,7 @@ const NavListItem = ({ label, id, active }) => {
   const primaryTypographyProps = { sx: sx.textPrimary };
 
   return (
-    <ListItemButton component="a" href={`#${id}`}>
+    <ListItemButton sx={sx.root} component="a" href={`#${id}`} selected={active}>
       <ListItemText
         primary={label}
         primaryTypographyProps={primaryTypographyProps}

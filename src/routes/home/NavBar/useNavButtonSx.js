@@ -1,6 +1,9 @@
 import { useMemo } from "preact/hooks";
 
-const useSx = () => useMemo(() => ({
+const useSx = ({ active }) => useMemo(() => ({
+  root: {
+    fontWeight: !active && "regular"
+  },
   active: {
     height: 3,
     width: 16,

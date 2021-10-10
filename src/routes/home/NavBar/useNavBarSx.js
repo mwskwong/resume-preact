@@ -17,7 +17,7 @@ const useSx = () => useMemo(() => ({
     }
   },
   navList: {
-    bgcolor: "background.paper"
+    px: 1
   }
 }), []);
 

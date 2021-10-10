@@ -1,9 +1,13 @@
 import { useMemo } from "preact/hooks";
 
 const useSx = ({ active }) => useMemo(() => ({
+  root: {
+    borderRadius: 1
+  },
   textPrimary: {
-    typography: "button",
-    color: active ? "text.primary" : "text.secondary"
+    fontWeight: active && "bold",
+    color: "text.primary",
+    textTransform: "capitalize"
   }
 }), [active]);
 

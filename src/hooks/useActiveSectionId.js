@@ -2,6 +2,8 @@ import * as nav from "constants/nav";
 
 import { useEffect, useState } from "preact/hooks";
 
+import debounce from "lodash/debounce";
+
 const useActiveSectionId = () => {
   const [activeSectionId, setActiveSectionId] = useState(nav.HOME.id);
 
@@ -14,7 +16,7 @@ const useActiveSectionId = () => {
   useEffect(() => {
     const sectionIds = Object.values(nav).map(({ id }) => id).reverse();
 
-    const handleScroll = () => {
+    const handleScroll = debounce(() => {
       if (isScrollToBottom()) {
         setTimeout(() => setActiveSectionId(sectionIds[0]));
       } else {
@@ -26,7 +28,7 @@ const useActiveSectionId = () => {
           }
         }
       }
-    };
+    }, 166);
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

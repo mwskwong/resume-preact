@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 import useSx from "./useNavButtonSx";
 
 const NavButton = ({ label, id, active }) => {
-  const sx = useSx();
+  const sx = useSx({ active });
 
   return (
-    <Button component="a" href={`#${id}`}>
+    <Button size="large" sx={sx.root} component="a" href={`#${id}`}>
       {label}
       {
         active

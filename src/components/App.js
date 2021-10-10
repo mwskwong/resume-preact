@@ -1,11 +1,11 @@
+import BrandingThemeProvider from "./BrandingThemeProvider";
 import { CssBaseline } from "@mui/material";
 import Home from "routes/home";
 import NoMatch from "routes/noMatch";
 import { Router } from "preact-router";
-import ThemeProvider from "./ThemeProvider";
 
 const App = () => (
-  <ThemeProvider>
+  <BrandingThemeProvider>
     <CssBaseline />
     <main>
       <Router>
@@ -13,7 +13,7 @@ const App = () => (
         <NoMatch default />
       </Router>
     </main>
-  </ThemeProvider>
+  </BrandingThemeProvider>
 );
 
 
