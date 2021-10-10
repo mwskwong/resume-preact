@@ -19,6 +19,9 @@ const useSx = () => useMemo(() => ({
     },
     "@media (max-width: 300px)": {
       height: theme => `${theme.typography.h1.lineHeight * 3}em`
+    },
+    "& .Typewriter__cursor": {
+      color: "text.primary"
     }
   },
   importantText: {

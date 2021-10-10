@@ -47,9 +47,6 @@ const getThemedComponents = theme => ({
           scrollMarginTop: "56px",
           paddingTop: theme.spacing(10),
           paddingBottom: theme.spacing(10)
-        },
-        ".Typewriter__cursor": {
-          color: `${theme.palette.text.primary} !important`
         }
       }
     },

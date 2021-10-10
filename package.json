@@ -28,18 +28,18 @@
     "sirv-cli": "1.0.14"
   },
   "dependencies": {
-    "@emotion/react": "^11.4.1",
-    "@emotion/styled": "^11.3.0",
     "@fontsource/rubik": "^4.5.0",
     "@mui/icons-material": "^5.0.3",
     "@mui/lab": "^5.0.0-alpha.50",
     "@mui/material": "^5.0.3",
+    "@mui/styled-engine-sc": "^5.0.3",
     "contentful": "^9.0.3",
     "emailjs-com": "^3.2.0",
     "lodash": "^4.17.21",
     "preact": "^10.5.14",
     "preact-render-to-string": "^5.1.19",
     "preact-router": "^3.2.1",
+    "styled-components": "^5.3.1",
     "typewriter-effect": "^2.18.2"
   },
   "jest": {
