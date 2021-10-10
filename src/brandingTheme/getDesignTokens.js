@@ -51,7 +51,7 @@ const getDesignTokens = mode => ({
       secondary: mode === "light" ? lighten(nord3, .2) : darken(nord6, .2),
       disabled: mode === "light" ? lighten(nord3, .4) : darken(nord6, .4)
     },
-    divider: alpha(nord4, .5),
+    divider: alpha(nord4, mode === "light" ? .8 : .5),
     background: {
       default: mode === "light" ? "#fff" : nord0,
       sectionPrimary: mode === "light" ? lighten(nord6, .8) : nord1,

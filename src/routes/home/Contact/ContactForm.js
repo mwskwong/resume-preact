@@ -5,7 +5,7 @@ import {
 } from "@mui/icons-material";
 import { Grid, TextField, useMediaQuery } from "@mui/material";
 import { isEmailValid, isValueEmpty } from "helpers";
-import { useRef, useState } from "react";
+import { useRef, useState } from "preact/hooks";
 
 import { LoadingButton } from "@mui/lab";
 import { sendEmail } from "api";

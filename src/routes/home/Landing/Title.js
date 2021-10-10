@@ -1,9 +1,8 @@
 import { Box, Typography } from "@mui/material";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "preact/hooks";
 
 import Typewriter from "typewriter-effect/dist/core";
 import { getOccupations } from "api";
-import { useState } from "preact/hooks";
 import useSx from "./useTitleSx";
 
 const Title = () => {

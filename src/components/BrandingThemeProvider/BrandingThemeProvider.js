@@ -2,7 +2,6 @@ import { brandingDarkTheme, brandingLightTheme } from "brandingTheme";
 
 import PropTypes from "prop-types";
 import { ThemeProvider } from "@mui/material";
-import { memo } from "react";
 
 const BrandingThemeProvider = ({ mode = "light", children }) => {
   const theme = mode === "light" ? brandingLightTheme : brandingDarkTheme;
@@ -22,4 +21,4 @@ BrandingThemeProvider.propTypes = {
 
 BrandingThemeProvider.whyDidYouRender = true;
 
-export default memo(BrandingThemeProvider);
+export default BrandingThemeProvider;

@@ -8,7 +8,7 @@ const SectionHeader = ({ heading, Icon }) => {
 
   return (
     <header>
-      <Typography sx={sx.heading} variant="h4" gutterBottom>
+      <Typography sx={sx.heading} variant="h2" gutterBottom>
         {heading}
       </Typography>
       <Box sx={sx.separatorContainer}>

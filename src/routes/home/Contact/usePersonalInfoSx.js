@@ -1,8 +1,8 @@
-import { useMemo } from "react";
+import { useMemo } from "preact/hooks";
 
 const useSx = () => useMemo(() => ({
   root: {
-    p: 4
+    p: 3
   }
 }), []);
 
