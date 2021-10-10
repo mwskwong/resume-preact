@@ -14,10 +14,10 @@ const useSx = () => useMemo(() => ({
     textTransform: "capitalize",
     textAlign: "center",
     color: "text.primary",
-    "@media (max-width: 520px)": {
+    "@media (max-width: 742px)": {
       height: theme => `${theme.typography.h1.lineHeight * 2}em`
     },
-    "@media (max-width: 300px)": {
+    "@media (max-width: 370px)": {
       height: theme => `${theme.typography.h1.lineHeight * 3}em`
     },
     "& .Typewriter__cursor": {
