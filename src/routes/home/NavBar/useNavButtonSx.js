@@ -3,7 +3,7 @@ import { useMemo } from "preact/hooks";
 const useSx = ({ active }) => useMemo(() => ({
   root: {
     fontWeight: !active && "regular",
-    color: active ? "primary.main" : "text.primary"
+    color: active && "primary.main"
   },
   active: {
     height: 3,
@@ -14,6 +14,6 @@ const useSx = ({ active }) => useMemo(() => ({
     left: theme => `calc(50% - ${theme.spacing(1)})`,
     borderRadius: "1px"
   }
-}), []);
+}), [active]);
 
 export default useSx;

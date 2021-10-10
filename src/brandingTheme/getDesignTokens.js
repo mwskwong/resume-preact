@@ -11,6 +11,10 @@ const getDesignTokens = mode => ({
       black: nord0
     },
     primary: {
+      // main: mode === "light" ? nord3 : nord6,
+      // main: mode === "light" ? "#007FFF" : "#5090D3",
+      // contrastText: nord6
+
       main: nord8,
       contrastText: nord3
     },

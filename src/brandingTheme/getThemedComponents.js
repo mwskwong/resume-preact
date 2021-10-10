@@ -7,7 +7,8 @@ const getThemedComponents = theme => ({
         root: {
           backgroundColor: alpha(theme.palette.background.default, .72),
           backdropFilter: "blur(20px)",
-          boxShadow: `inset 0px -1px 1px ${theme.palette.grey[100]}`
+          boxShadow: `inset 0px -1px 1px ${theme.palette.grey[100]}`,
+          color: theme.palette.text.primary
         }
       }
     },
@@ -48,8 +49,7 @@ const getThemedComponents = theme => ({
           paddingBottom: theme.spacing(10)
         },
         ".Typewriter__cursor": {
-          fontWeight: theme.typography.h1.fontWeight,
-          color: theme.palette.text.primary
+          color: `${theme.palette.text.primary} !important`
         }
       }
     },
