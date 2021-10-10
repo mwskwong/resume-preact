@@ -1,5 +1,5 @@
 import { alpha, darken, lighten } from "@mui/system";
-import { nord0, nord1, nord11, nord13, nord14, nord3, nord4, nord5, nord6, nord8 } from "./nord";
+import { nord0, nord1, nord11, nord13, nord14, nord4, nord5, nord6, nord8 } from "./nord";
 
 import defaultTheme from "./defaultTheme";
 import systemFonts from "./systemFonts";
@@ -11,32 +11,28 @@ const getDesignTokens = mode => ({
       black: nord0
     },
     primary: {
-      // main: mode === "light" ? nord3 : nord6,
-      // main: mode === "light" ? "#007FFF" : "#5090D3",
-      // contrastText: nord6
-
-      main: nord8,
-      contrastText: nord3
+      main: mode === "light" ? "#007FFF" : "#5090D3",
+      contrastText: nord6
     },
     secondary: {
-      main: mode === "light" ? lighten(nord3, .2) : darken(nord6, .2),
-      contrastText: mode === "light" ? nord6 : nord3
+      main: mode === "light" ? lighten(nord0, .2) : darken(nord6, .2),
+      contrastText: mode === "light" ? nord6 : nord0
     },
     error: {
       main: nord11,
-      contrastText: nord3
+      contrastText: nord0
     },
     warning: {
       main: nord13,
-      contrastText: nord3
+      contrastText: nord0
     },
     info: {
       main: nord8,
-      contrastText: nord3
+      contrastText: nord0
     },
     success: {
       main: nord14,
-      contrastText: nord3
+      contrastText: nord0
     },
     grey: {
       50: "#F3F6F9",
@@ -51,9 +47,9 @@ const getDesignTokens = mode => ({
       900: "#20262D"
     },
     text: {
-      primary: mode === "light" ? nord3 : nord6,
-      secondary: mode === "light" ? lighten(nord3, .2) : darken(nord6, .2),
-      disabled: mode === "light" ? lighten(nord3, .4) : darken(nord6, .4)
+      primary: mode === "light" ? nord0 : nord6,
+      secondary: mode === "light" ? lighten(nord0, .2) : darken(nord6, .2),
+      disabled: mode === "light" ? lighten(nord0, .4) : darken(nord6, .4)
     },
     divider: alpha(nord4, .5),
     background: {
