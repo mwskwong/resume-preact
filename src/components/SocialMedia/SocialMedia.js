@@ -36,9 +36,9 @@ const SocialMedia = ({ sx: sxProp }) => {
             key={name}
             color="inherit"
             aria-label={name}
+            component="a"
             href={link}
-            target="_blank"
-            rel="noopener noreferrer"
+            data-native
             edge={index === 0 ? "start" : index === socialMedia.length - 1 ? "end" : false}
           >
             <Icon />

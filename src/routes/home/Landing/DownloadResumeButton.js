@@ -15,9 +15,9 @@ const DownloadResumeButton = ({ sx }) => {
       variant="contained"
       color="secondary"
       size="large"
+      component="a"
       href={resumeURL}
-      target="_blank"
-      rel="noopener noreferrer"
+      data-native
     >
       Download Resume
     </Button>
