@@ -13,8 +13,8 @@ const NoMatch = () => {
       <Typography variant="h5" sx={sx.noMatchMessage}>
         The page you were looking for does not exist.
       </Typography>
-      <Button variant="contained" size="large" component={"a"} href="/">
-        go home
+      <Button variant="contained" color="secondary" size="large" component={"a"} href="/">
+        go back to home
       </Button>
     </Container>
   );
