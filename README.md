@@ -1,4 +1,5 @@
-# resume
+# Resume
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2c43e87d-cb81-4dfd-b222-621b42ce2550/deploy-status)](https://app.netlify.com/sites/mwskwong/deploys)
 
 ## CLI Commands
 
