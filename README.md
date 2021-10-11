@@ -24,3 +24,6 @@ For detailed explanation on how things work, checkout the [CLI Readme](https://g
 
 ## To Do
 1. Move Contentful data from local state to Redux store.
+2. Add `og:*` meta. Can reference the existing Gatsby site.
+3. Add `robot.txt`
+4. Add `sitemap.xml`
